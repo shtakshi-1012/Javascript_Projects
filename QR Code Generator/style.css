@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#imgBox{
+    max-height: 0;
+    transition: max-height 1s;
+}
+#imgBox.show-img{
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid #727171;
+}
+.error{
+    animation: shake 0.1s linear 10;
+}
+@keyframes shake {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}

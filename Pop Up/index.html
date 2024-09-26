@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container1 w-full h-screen bg-slate-700 flex items-center justify-center">
+        <button type="submit" class="py-3 px-16 bg-white border-none outline-none cursor-pointer text-2xl font-medium rounded-3xl" onclick="openPopup()">Submit</button>
+        <div class="popup w-96 bg-white rounded-md absolute left-1/2 scale1 text-center px-7 pb-7 pt-0 text-gray-900">
+            <img src="https://cdn-icons-png.freepik.com/256/5610/5610944.png?ga=GA1.1.1236349696.1686482087&semt=ais_hybrid" alt="" class="w-24 -mt-12 rounded-full shadow-md shadow-black m-auto">
+            <h2 class="font-medium text-3xl mt-7 mb-2">Thank You!</h2>
+            <p>Your details has been successfully submitted. Thanks!</p>
+            <button type="button" class="w-full h-10 mt-12 px-2 text-white border-0 outline-none text-lg rounded-md cursor-pointer shadow-md shadow-black bgcolor1" onclick="closePopup()">Ok</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

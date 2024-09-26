@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-700">
+    <div class="container w-96 py-7 px-9 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 bg-white rounded-xl">
+        <p class="font-semibold text-xl mb-2">Enter your text or url</p>
+        <input class="w-full h-1/2 border border-slate-700 outline-none p-3 my-3 mr-5 rounded-md" type="text" placeholder="Text or URL" id="qrText">
+        <div id="imgBox" class="w-52 rounded-md max-h-0 overflow-hidden">
+            <img src="" id="qrImage" alt="" class="w-full p-3 block">
+        </div>
+        <button onclick="generateQR()" class="w-full h-1/2
+        text-white border-none outline-none rounded-md shadow-lg cursor-pointer my-5 mx-0 font-medium bg-emerald-500 py-3">Generate QR Code</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

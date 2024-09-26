@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-amber-500">
+    <div class="heading mt-44 text-center text-5xl text-amber-950">STOPWATCH</div>
+    <div class="stopwatch w-11/12 max-w-screen-sm bg-cover bg-center text-center py-10 px-0 text-white mb-0 mx-auto shadow-lg shadow-slate-900">
+        <h1 class="mt-12 text-7xl font-light pb-5" id="displayTime">00:00:00</h1>
+        <div class="buttons flex items-center justify-center mt-3">
+            <img src="https://cdn-icons-png.freepik.com/256/4274/4274351.png?ga=GA1.1.1236349696.1686482087&semt=ais_hybrid" alt="Pause" onclick="watchStop()">
+            <img src="https://cdn-icons-png.freepik.com/256/4274/4274317.png?ga=GA1.1.1236349696.1686482087&semt=ais_hybrid" alt="Start" onclick="watchStart()">
+            <img src="https://cdn-icons-png.freepik.com/256/9604/9604395.png?ga=GA1.1.1236349696.1686482087&semt=ais_hybrid" alt="Restart" onclick="watchReset()">
+        </div>
+    </div>  
+    <script src="script.js"></script>  
+</body>
+</html>

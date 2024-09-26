@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-amber-600">
+    <div class="input-box bg-white w-11/12 max-w-lg rounded-md py-3 px-5 my-80 mx-auto flex items-center">
+        <input class="w-full py-3 border-0 outline-none text-slate-800 text-2xl" type="password" placeholder="password"
+            id="password">
+        <img class="cursor-pointer w-10"
+            src="https://cdn-icons-png.freepik.com/256/2311/2311537.png?ga=GA1.1.1236349696.1686482087&semt=ais_hybrid"
+            alt="" id="eye-icon" onclick="hideShow()">
+    </div>
+    <script>
+
+        let eyeIcon = document.getElementById("eye-icon");
+        let password = document.getElementById("password");
+
+        function hideShow() {
+            if (password.type == "password") {
+                password.type = "text";
+                eyeIcon.src = "https://cdn-icons-png.freepik.com/256/14266/14266075.png?ga=GA1.1.1236349696.1686482087&semt=ais_hybrid";
+            }
+            else {
+                password.type = "password";
+                eyeIcon.src = "https://cdn-icons-png.freepik.com/256/2311/2311537.png?ga=GA1.1.1236349696.1686482087&semt=ais_hybrid";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

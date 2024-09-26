@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-blue-500 to-purple-500 min-h-screen flex justify-center items-center">
+    <div class="container bg-cornsilk w-80 md:max-w-md rounded-lg p-10 text-center">
+        <div class="heading text-blue-900 flex items-center mb-8">
+            <h1 class="text-3xl font-bold">To-Do List</h1>
+            <img src="https://cdn-icons-png.freepik.com/256/9625/9625690.png?ga=GA1.1.1236349696.1686482087&" alt="" class="w-10 ml-4">
+        </div>
+        <div class="row bg-gray-200 rounded-lg items-center mb-6 p-4">
+            <input type="text" placeholder="Add your task" class="input-box bg-transparent w-3/4 outline-none">
+            <button onclick="addTask()" class="btn bg-red-500 text-white px-8 py-2 rounded-full"><h3>Add</h3></button>
+        </div>
+        <div class="list text-left">
+            <ul class="list-container"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
